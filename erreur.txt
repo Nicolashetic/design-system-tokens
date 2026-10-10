@@ -1,0 +1,90 @@
+file:///C:/Users/PC/Documents/GitHub/design-system-tokens/node_modules/style-dictionary/lib/StyleDictionary.js:551
+        throw new Error(err);
+              ^
+
+Error: 
+Reference Errors:
+Some token references (73) could not be found.
+
+{Semantic/Mode 1.Text.body} tries to reference {Neutral.700}, which is not defined.
+{Semantic/Mode 1.Text.Heading} tries to reference {Neutral.700}, which is not defined.
+{Semantic/Mode 1.Text.action} tries to reference {Primary.Default}, which is not defined.
+{Semantic/Mode 1.Text.action-hover} tries to reference {Primary.700}, which is not defined.
+{Semantic/Mode 1.Text.disabled} tries to reference {Neutral.400}, which is not defined.
+{Semantic/Mode 1.Text.information} tries to reference {Information.600}, which is not defined.
+{Semantic/Mode 1.Text.success} tries to reference {Success.600}, which is not defined.
+{Semantic/Mode 1.Text.error} tries to reference {Error.600}, which is not defined.
+{Semantic/Mode 1.Text.warning} tries to reference {Warning.600}, which is not defined.
+{Semantic/Mode 1.Text.on-action} tries to reference {Base.white}, which is not defined.
+{Semantic/Mode 1.Text.on-disabled} tries to reference {Neutral.700}, which is not defined.
+{Semantic/Mode 1.Surface.page} tries to reference {Base.white}, which is not defined.
+{Semantic/Mode 1.Surface.primary} tries to reference {Base.white}, which is not defined.
+{Semantic/Mode 1.Surface.success} tries to reference {Success.100}, which is not defined.
+{Semantic/Mode 1.Surface.warning} tries to reference {Warning.100}, which is not defined.
+{Semantic/Mode 1.Surface.information} tries to reference {Information.100}, which is not defined.
+{Semantic/Mode 1.Surface.error} tries to reference {Error.100}, which is not defined.
+{Semantic/Mode 1.Surface.action} tries to reference {Primary.Default}, which is not defined.
+{Semantic/Mode 1.Surface.action-hover} tries to reference {Primary.700}, which is not defined.
+{Semantic/Mode 1.Surface.action-hover-2} tries to reference {Primary.100}, which is not defined.
+{Semantic/Mode 1.Surface.disabled} tries to reference {Neutral.100}, which is not defined.
+{Semantic/Mode 1.Border.primary} tries to reference {Neutral.100}, which is not defined.
+{Semantic/Mode 1.Border.information} tries to reference {Information.300}, which is not defined.
+{Semantic/Mode 1.Border.success} tries to reference {Success.300}, which is not defined.
+{Semantic/Mode 1.Border.warning} tries to reference {Warning.300}, which is not defined.
+{Semantic/Mode 1.Border.error} tries to reference {Error.300}, which is not defined.
+{Semantic/Mode 1.Border.disabled} tries to reference {Neutral.300}, which is not defined.
+{Semantic/Mode 1.Border.action} tries to reference {Primary.Default}, which is not defined.
+{Semantic/Mode 1.Border.action-hover} tries to reference {Primary.700}, which is not defined.
+{Semantic/Mode 1.Border.focus} tries to reference {Primary.Default}, which is not defined.
+{Semantic/Mode 1.Icon.primary} tries to reference {Neutral.600}, which is not defined.
+{Semantic/Mode 1.Icon.information} tries to reference {Information.600}, which is not defined.
+{Semantic/Mode 1.Icon.success} tries to reference {Success.600}, which is not defined.
+{Semantic/Mode 1.Icon.warning} tries to reference {Warning.600}, which is not defined.
+{Semantic/Mode 1.Icon.error} tries to reference {Error.600}, which is not defined.
+{Semantic/Mode 1.Icon.action} tries to reference {Primary.Default}, which is not defined.
+{Semantic/Mode 1.Icon.action-hover} tries to reference {Primary.700}, which is not defined.
+{Semantic/Mode 1.Icon.on-action} tries to reference {Base.white}, which is not defined.
+{Semantic/Mode 1.Icon.on-disabled} tries to reference {Neutral.700}, which is not defined.
+{Semantic/Mode 1.widths.none} tries to reference {Spacing.0}, which is not defined.
+{Semantic/Mode 1.widths.xs} tries to reference {Spacing.25 (1)}, which is not defined.
+{Semantic/Mode 1.widths.sm} tries to reference {Spacing.50 (2)}, which is not defined.
+{Semantic/Mode 1.widths.md} tries to reference {Spacing.100 (4)}, which is not defined.
+{Semantic/Mode 1.widths.lg} tries to reference {Spacing.200 (8)}, which is not defined.
+{Semantic/Mode 1.raduis.none} tries to reference {Spacing.0}, which is not defined.
+{Semantic/Mode 1.raduis.xs} tries to reference {Spacing.50 (2)}, which is not defined.
+{Semantic/Mode 1.raduis.sm} tries to reference {Spacing.100 (4)}, which is not defined.
+{Semantic/Mode 1.raduis.md} tries to reference {Spacing.200 (8)}, which is not defined.
+{Semantic/Mode 1.raduis.round} tries to reference {Spacing.1500 (256)}, which is not defined.
+{Responsive/Desktop.Spacing.jumper.3xl-xl} tries to reference {Spacing.1500 (256)}, which is not defined.
+{Responsive/Desktop.Spacing.jumper.3xl-2xl} tries to reference {Spacing.1500 (256)}, which is not defined.
+{Responsive/Desktop.Spacing.jumper.2xl-xl} tries to reference {Spacing.1300 (128)}, which is not defined.
+{Responsive/Desktop.Spacing.jumper.xl-xl} tries to reference {Spacing.1300 (96)}, which is not defined.
+{Responsive/Desktop.Spacing.jumper.xl-sm} tries to reference {Spacing.1300 (96)}, which is not defined.
+{Responsive/Desktop.Spacing.jumper.xl-md} tries to reference {Spacing.1300 (96)}, which is not defined.
+{Responsive/Desktop.Spacing.jumper.md-sm} tries to reference {Spacing.1100 (56)}, which is not defined.
+{Responsive/Desktop.Spacing.jumper.sm-xl} tries to reference {Spacing.1000 (48)}, which is not defined.
+{Responsive/Tablet.Spacing.jumper.3xl-xl} tries to reference {Spacing.1300 (128)}, which is not defined.
+{Responsive/Tablet.Spacing.jumper.3xl-2xl} tries to reference {Spacing.1300 (128)}, which is not defined.
+{Responsive/Tablet.Spacing.jumper.2xl-xl} tries to reference {Spacing.1300 (128)}, which is not defined.
+{Responsive/Tablet.Spacing.jumper.xl-xl} tries to reference {Spacing.1300 (96)}, which is not defined.
+{Responsive/Tablet.Spacing.jumper.xl-sm} tries to reference {Spacing.1300 (96)}, which is not defined.
+{Responsive/Tablet.Spacing.jumper.xl-md} tries to reference {Spacing.1100 (56)}, which is not defined.
+{Responsive/Tablet.Spacing.jumper.md-sm} tries to reference {Spacing.1000 (48)}, which is not defined.
+{Responsive/Tablet.Spacing.jumper.sm-xl} tries to reference {Spacing.1000 (48)}, which is not defined.
+{Responsive/Mobile.Spacing.jumper.3xl-xl} tries to reference {Spacing.1300 (96)}, which is not defined.
+{Responsive/Mobile.Spacing.jumper.3xl-2xl} tries to reference {Spacing.1300 (128)}, which is not defined.
+{Responsive/Mobile.Spacing.jumper.2xl-xl} tries to reference {Spacing.1300 (96)}, which is not defined.
+{Responsive/Mobile.Spacing.jumper.xl-xl} tries to reference {Spacing.1300 (96)}, which is not defined.
+{Responsive/Mobile.Spacing.jumper.xl-sm} tries to reference {Spacing.1000 (48)}, which is not defined.
+{Responsive/Mobile.Spacing.jumper.xl-md} tries to reference {Spacing.1100 (56)}, which is not defined.
+{Responsive/Mobile.Spacing.jumper.md-sm} tries to reference {Spacing.1000 (48)}, which is not defined.
+{Responsive/Mobile.Spacing.jumper.sm-xl} tries to reference {Spacing.1300 (96)}, which is not defined.
+
+    at StyleDictionary._exportPlatform (file:///C:/Users/PC/Documents/GitHub/design-system-tokens/node_modules/style-dictionary/lib/StyleDictionary.js:551:15)
+    at async StyleDictionary.getPlatformTokens (file:///C:/Users/PC/Documents/GitHub/design-system-tokens/node_modules/style-dictionary/lib/StyleDictionary.js:399:26)
+    at async StyleDictionary.cleanPlatform (file:///C:/Users/PC/Documents/GitHub/design-system-tokens/node_modules/style-dictionary/lib/StyleDictionary.js:955:24)
+    at async Promise.all (index 0)
+    at async StyleDictionary.cleanAllPlatforms (file:///C:/Users/PC/Documents/GitHub/design-system-tokens/node_modules/style-dictionary/lib/StyleDictionary.js:979:7)
+    at async file:///C:/Users/PC/Documents/GitHub/design-system-tokens/build.mjs:22:1
+
+Node.js v24.21.0
