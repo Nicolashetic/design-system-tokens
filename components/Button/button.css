@@ -1,0 +1,57 @@
+/* Bouton : n'utilise que des tokens du design system (voir CLAUDE.md) */
+.ds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ds-spacing-200-8);
+  min-height: var(--ds-spacing-1000-48);
+  padding: 0 var(--ds-spacing-600-24);
+  border: var(--ds-widths-xs) solid transparent;
+  border-radius: var(--ds-radius-sm);
+  font-family: var(--ds-font-body), sans-serif;
+  font-size: var(--ds-paragraph-size-paragraph);
+  line-height: var(--ds-paragraph-lineheight-paragraph-lineheight);
+  cursor: pointer;
+}
+
+/* Variantes */
+.ds-button--primary {
+  background-color: var(--ds-surface-action);
+  color: var(--ds-text-on-action);
+  border-color: var(--ds-border-action);
+}
+.ds-button--primary:hover {
+  background-color: var(--ds-surface-action-hover);
+  border-color: var(--ds-border-action-hover);
+}
+
+.ds-button--secondary {
+  background-color: var(--ds-surface-page);
+  color: var(--ds-text-action);
+  border-color: var(--ds-border-action);
+}
+.ds-button--secondary:hover {
+  background-color: var(--ds-surface-action-hover-2);
+  color: var(--ds-text-action-hover);
+  border-color: var(--ds-border-action-hover);
+}
+
+/* Taille */
+.ds-button--lg {
+  min-height: var(--ds-spacing-1100-56);
+  padding: 0 var(--ds-spacing-800-32);
+}
+
+/* Focus clavier */
+.ds-button:focus-visible {
+  outline: var(--ds-widths-sm) solid var(--ds-border-focus);
+  outline-offset: var(--ds-widths-sm);
+}
+
+/* Désactivé (toujours en dernier pour primer sur le survol) */
+.ds-button:disabled {
+  background-color: var(--ds-surface-disabled);
+  color: var(--ds-text-on-disabled);
+  border-color: var(--ds-border-disabled);
+  cursor: not-allowed;
+}

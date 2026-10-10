@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bouton</title>
+  <link rel="stylesheet" href="../../build/css/core.css">
+  <link rel="stylesheet" href="../../build/css/brand-marque-a.css">
+  <link rel="stylesheet" href="button.css">
+  <style>
+    body {
+      margin: 0;
+      padding: var(--ds-spacing-800-32);
+      background-color: var(--ds-surface-page);
+      color: var(--ds-text-body);
+      font-family: var(--ds-font-body), sans-serif;
+    }
+    h1 {
+      margin: 0 0 var(--ds-spacing-600-24);
+      font-family: var(--ds-font-title), sans-serif;
+      font-size: var(--ds-heading-size-h4);
+      color: var(--ds-text-heading);
+    }
+    h2 {
+      margin: 0 0 var(--ds-spacing-300-12);
+      font-size: var(--ds-heading-size-h6);
+      color: var(--ds-text-heading);
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--ds-spacing-400-16);
+      margin-bottom: var(--ds-spacing-800-32);
+    }
+  </style>
+</head>
+<body>
+  <h1>Bouton</h1>
+
+  <h2>Primaire</h2>
+  <div class="row">
+    <button class="ds-button ds-button--primary">Valider</button>
+    <button class="ds-button ds-button--primary ds-button--lg">Valider (grand)</button>
+    <button class="ds-button ds-button--primary" disabled>Désactivé</button>
+  </div>
+
+  <h2>Secondaire</h2>
+  <div class="row">
+    <button class="ds-button ds-button--secondary">Annuler</button>
+    <button class="ds-button ds-button--secondary ds-button--lg">Annuler (grand)</button>
+    <button class="ds-button ds-button--secondary" disabled>Désactivé</button>
+  </div>
+</body>
+</html>
