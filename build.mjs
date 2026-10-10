@@ -21,7 +21,6 @@ function merge(target, source) {
   return target;
 }
 
-// On fusionne les collections en retirant le "dossier" qui les enveloppe
 const sets = ['Primitive/Mode 1', 'Semantic/Mode 1', 'Responsive/Desktop'];
 const tokens = {};
 for (const name of sets) {
@@ -30,7 +29,6 @@ for (const name of sets) {
 }
 
 const sd = new StyleDictionary({
-  log: { verbosity: 'verbose' },
   tokens,
   preprocessors: ['tokens-studio'],
   platforms: {
@@ -38,7 +36,21 @@ const sd = new StyleDictionary({
       transformGroup: 'tokens-studio',
       prefix: 'ds',
       buildPath: 'build/css/',
-      files: [{ destination: 'variables.css', format: 'css/variables' }]
+      files: [
+        {
+          // Fichier de la marque : uniquement la famille Primary
+          destination: 'brand-marque-a.css',
+          format: 'css/variables',
+          filter: (token) => token.path[0] === 'Primary'
+        },
+        {
+          // Tout le reste, avec des liens vers la marque
+          destination: 'core.css',
+          format: 'css/variables',
+          filter: (token) => token.path[0] !== 'Primary',
+          options: { outputReferences: true }
+        }
+      ]
     }
   }
 });
