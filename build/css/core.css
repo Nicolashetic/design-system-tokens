@@ -52,6 +52,10 @@
   --ds-neutral-default: #444955;
   --ds-font-title: montserrat;
   --ds-font-body: Inter;
+  --ds-font-weight-regular: 25rem;
+  --ds-font-weight-medium: 31.25rem;
+  --ds-font-weight-semibold: 37.5rem;
+  --ds-font-weight-bold: 43.75rem;
   --ds-spacing-0: 0rem;
   --ds-spacing-100-4: 0.25rem;
   --ds-spacing-200-8: 0.5rem;
@@ -107,6 +111,7 @@
   --ds-text-warning: var(--ds-warning-600);
   --ds-text-on-action: var(--ds-base-white);
   --ds-text-on-disabled: var(--ds-neutral-700);
+  --ds-text-placeholder: var(--ds-neutral-400);
   --ds-surface-page: var(--ds-base-white);
   --ds-surface-primary: var(--ds-base-white);
   --ds-surface-success: var(--ds-success-100);
@@ -126,6 +131,8 @@
   --ds-border-action: var(--ds-primary-default);
   --ds-border-action-hover: var(--ds-primary-700);
   --ds-border-focus: var(--ds-primary-default);
+  --ds-border-strong: var(--ds-neutral-300);
+  --ds-border-strong-hover: var(--ds-neutral-400);
   --ds-icon-primary: var(--ds-neutral-600);
   --ds-icon-information: var(--ds-information-600);
   --ds-icon-success: var(--ds-success-600);
@@ -145,4 +152,17 @@
   --ds-radius-sm: var(--ds-spacing-100-4);
   --ds-radius-md: var(--ds-spacing-200-8);
   --ds-radius-round: var(--ds-spacing-1500-256);
+  --ds-radius-none: var(--ds-spacing-0);
+  --ds-radius-xs: var(--ds-spacing-50-2);
+  --ds-radius-sm: var(--ds-spacing-100-4);
+  --ds-radius-md: var(--ds-spacing-200-8);
+  --ds-radius-round: var(--ds-spacing-1500-256);
+  --ds-control-height-sm: var(--ds-spacing-900-40);
+  --ds-control-height-md: var(--ds-spacing-1000-48);
+  --ds-control-height-lg: var(--ds-spacing-1100-56);
+  --ds-icon-size-sm: var(--ds-spacing-400-16);
+  --ds-icon-size-md: var(--ds-spacing-500-20);
+  --ds-icon-size-lg: var(--ds-spacing-600-24);
+  --ds-focus-ring-width: var(--ds-widths-sm);
+  --ds-focus-ring-offset: var(--ds-widths-sm);
 }
