@@ -1,0 +1,41 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Composants</title>
+<link rel="stylesheet" href="../build/css/brand-marque-a.css">
+<link rel="stylesheet" href="../build/css/core.css">
+<link rel="stylesheet" href="Button/button.css">
+<link rel="stylesheet" href="_base.css"><link rel="stylesheet" href="forms.css"><link rel="stylesheet" href="feedback.css">
+<link rel="stylesheet" href="data-display.css"><link rel="stylesheet" href="navigation.css"><link rel="stylesheet" href="overlays.css">
+<style>section{padding:24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center}h2{padding:0 24px}</style></head><body>
+<h2>Formulaires</h2><section>
+<div class="ds-field"><label class="ds-field__label">Nom</label><input class="ds-input" placeholder="Votre nom"></div>
+<div class="ds-field"><label class="ds-field__label">Email</label><input class="ds-input ds-input--error"><span class="ds-field__error">Email invalide</span></div>
+<label class="ds-check"><input type="checkbox" checked>Checkbox</label>
+<label class="ds-radio"><input type="radio" checked>Radio</label>
+<label class="ds-toggle"><input type="checkbox" checked>Toggle</label>
+<input class="ds-slider" type="range" style="width:200px">
+<div class="ds-segmented"><button class="ds-segmented__option" aria-pressed="true">Jour</button><button class="ds-segmented__option">Mois</button></div>
+<div class="ds-calendar"><button class="ds-day ds-day--outside">29</button><button class="ds-day">1</button><button class="ds-day ds-day--today">2</button><button class="ds-day ds-day--selected">3</button><button class="ds-day" disabled>4</button></div>
+</section>
+<h2>Feedback</h2><section>
+<span class="ds-badge">Neutre</span><span class="ds-badge ds-badge--primary">Primary</span><span class="ds-badge ds-badge--success">OK</span><span class="ds-badge ds-badge--warning">Attention</span><span class="ds-badge ds-badge--error">Erreur</span>
+<div class="ds-alert ds-alert--info">Information</div><div class="ds-toast ds-toast--success">Enregistré</div>
+<div class="ds-progress" style="--value:60%;width:200px"><div class="ds-progress__bar"></div></div>
+<span class="ds-spinner"></span><div class="ds-skeleton" style="width:150px"></div><div class="ds-skeleton ds-skeleton--circle"></div>
+</section>
+<h2>Données</h2><section>
+<div class="ds-card">Card</div><div class="ds-card ds-card--elevated">Elevated</div>
+<span class="ds-avatar">NL</span><span class="ds-avatar ds-avatar--square">AB</span>
+<button class="ds-chip" aria-pressed="true">Chip</button><button class="ds-chip">Chip</button>
+<div class="ds-accordion" style="width:300px"><div class="ds-accordion__item"><button class="ds-accordion__trigger">Titre <span>+</span></button><div class="ds-accordion__panel">Contenu</div></div></div>
+<table class="ds-table" style="width:400px"><thead><tr><th>Nom</th><th>Rôle</th></tr></thead><tbody><tr><td>Nico</td><td>UX</td></tr><tr aria-selected="true"><td>Léa</td><td>UI</td></tr></tbody></table>
+</section>
+<h2>Navigation</h2><section>
+<div class="ds-tabs"><button class="ds-tab" aria-selected="true">Un</button><button class="ds-tab">Deux</button></div>
+<ol class="ds-breadcrumb"><li><a href="#">Accueil</a></li><li aria-current="page">Page</li></ol>
+<div class="ds-pagination"><button class="ds-page" disabled>‹</button><button class="ds-page" aria-current="page">1</button><button class="ds-page">2</button><button class="ds-page">›</button></div>
+<a class="ds-nav-item" href="#" aria-current="page">Dashboard</a>
+<ol class="ds-stepper"><li class="ds-step ds-step--completed"><span class="ds-step__dot">✓</span>Compte</li><li class="ds-step ds-step--current"><span class="ds-step__dot">2</span>Profil</li><li class="ds-step"><span class="ds-step__dot">3</span>Fin</li></ol>
+</section>
+<h2>Overlays</h2><section>
+<div class="ds-menu"><button class="ds-menu__item">Modifier</button><button class="ds-menu__item" disabled>Supprimer</button></div>
+<span class="ds-tooltip">Info-bulle</span>
+</section></body></html>

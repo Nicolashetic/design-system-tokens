@@ -1,0 +1,14 @@
+/* Menu */
+.ds-menu{display:flex;flex-direction:column;min-width:200px;padding:var(--ds-spacing-100-4);background:var(--ds-surface-primary);border:var(--ds-widths-xs) solid var(--ds-border-primary);border-radius:var(--ds-radius-md);box-shadow:var(--ds-shadow-md)}
+.ds-menu__item{font:inherit;text-align:left;background:none;border:0;padding:var(--ds-spacing-200-8) var(--ds-spacing-300-12);border-radius:var(--ds-radius-xs);color:var(--ds-text-body);cursor:pointer}
+.ds-menu__item:hover{background:var(--ds-surface-control-hover)}
+.ds-menu__item:disabled{color:var(--ds-text-disabled);cursor:not-allowed}
+
+/* Tooltip */
+.ds-tooltip{display:inline-block;padding:var(--ds-spacing-100-4) var(--ds-spacing-200-8);background:var(--ds-surface-inverse);color:var(--ds-text-inverse);border-radius:var(--ds-radius-xs);font-size:var(--ds-paragraph-size-paragraph-sm)}
+
+/* Modal */
+.ds-modal-backdrop{position:fixed;inset:0;display:grid;place-items:center;background:var(--ds-surface-overlay)}
+.ds-modal{width:min(560px,calc(100vw - var(--ds-spacing-800-32)));background:var(--ds-surface-primary);border-radius:var(--ds-radius-md);box-shadow:var(--ds-shadow-lg);padding:var(--ds-spacing-600-24)}
+.ds-modal--sm{width:min(400px,calc(100vw - var(--ds-spacing-800-32)))}
+.ds-modal__footer{display:flex;justify-content:flex-end;gap:var(--ds-spacing-200-8);margin-top:var(--ds-spacing-600-24)}

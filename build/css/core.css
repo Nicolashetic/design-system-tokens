@@ -5,6 +5,7 @@
 :root {
   --ds-base-white: #ffffff;
   --ds-base-black: #000000;
+  --ds-base-black-alpha-50: rgba(0, 0, 0, 0.5019607843137255);
   --ds-error-100: #ffcccc;
   --ds-error-200: #ff9999;
   --ds-error-300: #ff6666;
@@ -41,6 +42,7 @@
   --ds-warning-800: #662b00;
   --ds-warning-900: #331500;
   --ds-warning-default: #ff6b00;
+  --ds-neutral-50: #f3f4f5;
   --ds-neutral-100: #dadbdd;
   --ds-neutral-200: #b4b6bb;
   --ds-neutral-300: #8f9299;
@@ -112,6 +114,12 @@
   --ds-text-on-action: var(--ds-base-white);
   --ds-text-on-disabled: var(--ds-neutral-700);
   --ds-text-placeholder: var(--ds-neutral-400);
+  --ds-text-secondary: var(--ds-neutral-400);
+  --ds-text-inverse: var(--ds-base-white);
+  --ds-text-information-strong: var(--ds-information-800);
+  --ds-text-success-strong: var(--ds-success-800);
+  --ds-text-warning-strong: var(--ds-warning-800);
+  --ds-text-error-strong: var(--ds-error-800);
   --ds-surface-page: var(--ds-base-white);
   --ds-surface-primary: var(--ds-base-white);
   --ds-surface-success: var(--ds-success-100);
@@ -122,6 +130,15 @@
   --ds-surface-action-hover: var(--ds-primary-700);
   --ds-surface-action-hover-2: var(--ds-primary-100);
   --ds-surface-disabled: var(--ds-neutral-100);
+  --ds-surface-subtle: var(--ds-neutral-50);
+  --ds-surface-inverse: var(--ds-neutral-800);
+  --ds-surface-overlay: var(--ds-base-black-alpha-50);
+  --ds-surface-control: var(--ds-neutral-300);
+  --ds-surface-control-hover: var(--ds-neutral-400);
+  --ds-surface-track: var(--ds-neutral-100);
+  --ds-surface-destructive: var(--ds-error-600);
+  --ds-surface-destructive-hover: var(--ds-error-700);
+  --ds-surface-neutral: var(--ds-neutral-100);
   --ds-border-primary: var(--ds-neutral-100);
   --ds-border-information: var(--ds-information-300);
   --ds-border-success: var(--ds-success-300);
@@ -133,6 +150,8 @@
   --ds-border-focus: var(--ds-primary-default);
   --ds-border-strong: var(--ds-neutral-300);
   --ds-border-strong-hover: var(--ds-neutral-400);
+  --ds-border-destructive: var(--ds-error-600);
+  --ds-border-destructive-hover: var(--ds-error-700);
   --ds-icon-primary: var(--ds-neutral-600);
   --ds-icon-information: var(--ds-information-600);
   --ds-icon-success: var(--ds-success-600);
@@ -142,6 +161,7 @@
   --ds-icon-action-hover: var(--ds-primary-700);
   --ds-icon-on-action: var(--ds-base-white);
   --ds-icon-on-disabled: var(--ds-neutral-700);
+  --ds-icon-disabled: var(--ds-neutral-400);
   --ds-widths-none: var(--ds-spacing-0);
   --ds-widths-xs: var(--ds-spacing-25-1);
   --ds-widths-sm: var(--ds-spacing-50-2);
@@ -163,6 +183,7 @@
   --ds-icon-size-sm: var(--ds-spacing-400-16);
   --ds-icon-size-md: var(--ds-spacing-500-20);
   --ds-icon-size-lg: var(--ds-spacing-600-24);
+  --ds-focus-ring-total: var(--ds-spacing-100-4);
   --ds-focus-ring-width: var(--ds-widths-sm);
   --ds-focus-ring-offset: var(--ds-widths-sm);
 }

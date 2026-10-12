@@ -1,0 +1,8 @@
+/* Base commune : ombres (styles d'effet Figma, pas encore des tokens) */
+:root{
+  --ds-shadow-sm:0 1px 2px var(--ds-surface-overlay);
+  --ds-shadow-md:0 4px 12px var(--ds-surface-overlay);
+  --ds-shadow-lg:0 12px 32px var(--ds-surface-overlay);
+}
+body{font-family:var(--ds-font-body);color:var(--ds-text-body);background:var(--ds-surface-page);font-size:var(--ds-paragraph-size-paragraph);line-height:1.5}
+*:focus-visible{outline:var(--ds-focus-ring-width) solid var(--ds-border-focus);outline-offset:var(--ds-focus-ring-offset)}
