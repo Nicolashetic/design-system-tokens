@@ -102,4 +102,4 @@ Le préfixe est `--ds-`, le nom suit Figma en kebab-case :
 - Le `line-height` est fixé à `1.5` dans `_base.css`, sans token.
 - Pas de CSS responsive Tablet/Mobile pour l'instant. Le mode sombre n'est pas prévu.
 - Le contraste du violet principal sur fond blanc est proche de 4:1 : à vérifier pour le texte.
-- Composants Figma sans CSS pour l'instant : aucun. Composants Figma pas encore créés : upload de fichier, champ de recherche, navbar, sidebar, drawer, popover, carte KPI, list item, empty state.
+- Composants Figma sans CSS pour l'instant : aucun. Composants Figma pas encore créés : upload de fichier, navbar, sidebar, drawer, popover, carte KPI, list item, empty state, Calendar + Day, Search field.
