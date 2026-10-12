@@ -1,0 +1,28 @@
+/* Sections de page : Site header, Article hero, Article body, Related articles, Site footer */
+.ds-site-header{display:flex;align-items:center;justify-content:space-between;padding:var(--ds-spacing-400-16) var(--ds-spacing-1000-48);background:var(--ds-surface-primary);border-bottom:var(--ds-widths-xs) solid var(--ds-border-primary)}
+.ds-site-header__logo{font-family:var(--ds-font-title);font-weight:var(--ds-font-weight-bold);font-size:var(--ds-heading-size-h5);color:var(--ds-text-action);text-decoration:none}
+.ds-site-header__nav{display:flex;gap:var(--ds-spacing-800-32);list-style:none;margin:0;padding:0}
+.ds-site-header__nav a{font-weight:var(--ds-font-weight-semibold);font-size:var(--ds-paragraph-size-paragraph-sm);color:var(--ds-text-body);text-decoration:none}
+.ds-site-header__nav a:hover{color:var(--ds-text-action-hover)}
+.ds-site-header .ds-search{width:280px}
+
+.ds-article-hero{display:flex;justify-content:center;padding:var(--ds-spacing-1200-64) var(--ds-spacing-1000-48) var(--ds-spacing-800-32)}
+.ds-article-hero__content{display:flex;flex-direction:column;align-items:flex-start;gap:var(--ds-spacing-400-16);width:100%;max-width:760px}
+.ds-article-hero__meta{display:flex;align-items:center;gap:var(--ds-spacing-300-12)}
+
+.ds-article-body{display:flex;justify-content:center;padding:var(--ds-spacing-800-32) var(--ds-spacing-1000-48) var(--ds-spacing-1200-64)}
+.ds-article-body__column{display:flex;flex-direction:column;gap:var(--ds-spacing-600-24);width:100%;max-width:720px}
+
+.ds-related{display:flex;flex-direction:column;gap:var(--ds-spacing-600-24);padding:var(--ds-spacing-1200-64) var(--ds-spacing-1000-48);background:var(--ds-surface-subtle)}
+.ds-related__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--ds-spacing-600-24)}
+
+.ds-site-footer{display:flex;align-items:center;justify-content:space-between;padding:var(--ds-spacing-800-32) var(--ds-spacing-1000-48);background:var(--ds-surface-inverse);color:var(--ds-text-inverse)}
+.ds-site-footer__logo{font-family:var(--ds-font-title);font-weight:var(--ds-font-weight-bold);font-size:var(--ds-heading-size-h5)}
+.ds-site-footer__legal{font-size:var(--ds-paragraph-size-paragraph-sm)}
+
+/* Responsive minimal */
+@media (max-width:900px){
+  .ds-site-header__nav{display:none}
+  .ds-related__grid{grid-template-columns:1fr}
+  .ds-cover,.ds-article-hero,.ds-article-body,.ds-related,.ds-site-header,.ds-site-footer{padding-left:var(--ds-spacing-400-16);padding-right:var(--ds-spacing-400-16)}
+}
