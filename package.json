@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,10 @@
   },
   "homepage": "https://github.com/Nicolashetic/design-system-tokens#readme",
   "devDependencies": {
+    "@storybook/html-vite": "^10.6.1",
     "@tokens-studio/sd-transforms": "^2.0.3",
-    "style-dictionary": "^5.6.1"
+    "storybook": "^10.6.1",
+    "style-dictionary": "^5.6.1",
+    "vite": "^7.3.7"
   }
 }
