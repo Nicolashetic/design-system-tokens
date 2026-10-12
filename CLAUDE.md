@@ -44,10 +44,14 @@ Fournir : le CSS, la page de démo, la liste des tokens utilisés et le résulta
 
 ### Où ranger le CSS
 - Un fichier CSS par famille, dans `components/` : `forms.css`, `feedback.css`, `data-display.css`, `navigation.css`, `overlays.css`.
+- `content.css` : blocs de contenu (Paragraph, Heading, Blockquote, Tag list, Cover image, Author box, Article card).
+- `sections.css` : sections de page (Site header, Article hero, Article body, Related articles, Site footer).
 - `_base.css` : styles communs (police, focus visible, ombres `--ds-shadow-*`).
 - Le Button garde son dossier : `components/Button/button.css`.
 - `components/index.html` : page de démo. Tout nouveau composant doit y apparaître.
+- `components/template-article.html` : page d'article assemblée uniquement avec des classes `ds-*`, sans CSS propre à la page.
 - Un nouveau composant va dans la famille qui lui correspond. On ne crée un fichier que pour une nouvelle famille, et on l'ajoute alors à `index.html`.
+
 
 ### Composants existants (miroir du fichier Figma « Token design setup »)
 - **Formulaires** : Input, Textarea, Select, Checkbox, Radio, Toggle, Slider, Segmented control, Calendar + Day.
