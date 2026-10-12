@@ -37,3 +37,69 @@ Ce fichier est lu par l'IA avant toute création ou modification de composant. I
 
 ## À chaque livraison
 Fournir : le CSS, la page de démo, la liste des tokens utilisés et le résultat de la vérification des contrastes.
+
+---
+
+## Conventions des composants (ajout)
+
+### Où ranger le CSS
+- Un fichier CSS par famille, dans `components/` : `forms.css`, `feedback.css`, `data-display.css`, `navigation.css`, `overlays.css`.
+- `_base.css` : styles communs (police, focus visible, ombres `--ds-shadow-*`).
+- Le Button garde son dossier : `components/Button/button.css`.
+- `components/index.html` : page de démo. Tout nouveau composant doit y apparaître.
+- Un nouveau composant va dans la famille qui lui correspond. On ne crée un fichier que pour une nouvelle famille, et on l'ajoute alors à `index.html`.
+
+### Composants existants (miroir du fichier Figma « Token design setup »)
+- **Formulaires** : Input, Textarea, Select, Checkbox, Radio, Toggle, Slider, Segmented control, Calendar + Day.
+- **Feedback** : Badge, Alert, Toast, Progress, Spinner, Skeleton.
+- **Données** : Card, Avatar, Divider, Chip, Accordion, Table.
+- **Navigation** : Tabs, Breadcrumb, Pagination, Nav item, Stepper.
+- **Overlays** : Menu, Tooltip, Modal.
+- **Button** : composant à part.
+
+### Nommage (BEM simplifié)
+- Bloc : `.ds-nom` (ex. `.ds-card`).
+- Élément : `.ds-nom__element` (ex. `.ds-field__label`).
+- Variante : `.ds-nom--variante` (ex. `.ds-badge--success`).
+- Tailles : `--sm`, `--lg`. La taille `md` est la valeur par défaut, sans classe.
+- Les états passent par les attributs HTML natifs quand ils existent : `:hover`, `:focus-visible`, `:disabled`, `[aria-pressed]`, `[aria-selected]`, `[aria-current]`. Pas de classe `.is-active`.
+
+### Noms des variables CSS
+Le préfixe est `--ds-`, le nom suit Figma en kebab-case :
+- `Spacing/100 (4)` → `--ds-spacing-100-4`
+- `Surface/action-hover` → `--ds-surface-action-hover`
+- `Font/weight/semibold` → `--ds-font-weight-semibold`
+- `control-height/md` → `--ds-control-height-md`
+- Vérifier un nom : le chercher dans `build/css/core.css` (Ctrl+F) avant de l'utiliser. S'il n'existe pas, ne pas l'inventer : l'ajouter dans Figma, resynchroniser (Tokens Studio puis `node build.mjs`) ou signaler le manque.
+
+### Mapping sémantique par rôle
+| Besoin | Token |
+|---|---|
+| Fond de page / de composant | `--ds-surface-page` / `--ds-surface-primary` |
+| Fond d'action (bouton, sélection) | `--ds-surface-action` (+ `-hover`) |
+| Fond de zone de contrôle (segmented, hover discret) | `--ds-surface-control` / `-control-hover` |
+| Fond désactivé | `--ds-surface-disabled` |
+| Fond de rail (progress, toggle, skeleton) | `--ds-surface-track` |
+| Fond de statut | `--ds-surface-success` / `-warning` / `-error` / `-information` |
+| Texte courant / secondaire | `--ds-text-body` / `--ds-text-secondary` |
+| Texte de statut | `--ds-text-success-strong` / `-warning-strong` / `-error-strong` / `-information-strong` |
+| Texte sur fond d'action | `--ds-text-on-action` |
+| Bordure par défaut / forte | `--ds-border-primary` / `--ds-border-strong` |
+| Focus | `--ds-border-focus`, `--ds-focus-ring-width`, `--ds-focus-ring-offset` |
+| Hauteur d'un contrôle | `--ds-control-height-sm` (40) / `-md` (48) / `-lg` (56) |
+| Taille d'icône | `--ds-icon-size-sm` (16) / `-md` (20) / `-lg` (24) |
+
+### Règles à respecter pour chaque composant
+1. Aucune valeur en dur (couleur, px, rayon). Uniquement `var(--ds-…)`.
+2. Utiliser uniquement des tokens sémantiques, jamais primitifs. La seule exception est `Primary/*`, qui vient de `brand-*.css` pour la marque blanche.
+3. Prévoir les états : default, hover, focus-visible, disabled. Ajouter error ou selected quand c'est pertinent.
+4. Accessibilité : contraste AA (4.5:1 pour le texte), focus toujours visible, bon élément HTML (`button`, `input`, `table`…) plutôt qu'un `div`. Ajouter les `aria-*` nécessaires.
+5. Le composant doit être identique à son homologue Figma (mêmes variantes, mêmes tailles).
+6. Après chaque ajout : ouvrir `components/index.html` dans le navigateur pour vérifier le rendu.
+
+### Écarts connus (à corriger plus tard)
+- Les ombres (`Shadow/sm|md|lg`) sont des styles d'effet Figma, définis à la main dans `_base.css`.
+- Le `line-height` est fixé à `1.5` dans `_base.css`, sans token.
+- Pas de CSS responsive Tablet/Mobile pour l'instant. Le mode sombre n'est pas prévu.
+- Le contraste du violet principal sur fond blanc est proche de 4:1 : à vérifier pour le texte.
+- Composants Figma sans CSS pour l'instant : aucun. Composants Figma pas encore créés : upload de fichier, champ de recherche, navbar, sidebar, drawer, popover, carte KPI, list item, empty state.
